@@ -4,7 +4,7 @@ import { createSlice } from '@reduxjs/toolkit/';
 const unitsSlice = createSlice({
   name: 'units',
   initialState: {
-    units: '',
+    units: [],
     isLoading: false,
   },
   reducers: {
