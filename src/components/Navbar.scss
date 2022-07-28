@@ -1,0 +1,15 @@
+@import "../sass/reset";
+@import "../sass/variables";
+
+.main {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+padding: 1rem;
+    .links {
+        font-size: 1.4rem;
+        padding:0 .5rem;
+        text-decoration: none;
+        color: $darkGreen;
+    }
+}
