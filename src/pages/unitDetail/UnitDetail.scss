@@ -1,0 +1,16 @@
+@import "../../sass/reset";
+@import "../../sass/variables";
+
+.main_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 66px);
+    .title {
+        color: $purple;
+        padding-bottom: 2rem;
+    }
+    .items {
+        font-size: 1.2rem;
+    }
+}

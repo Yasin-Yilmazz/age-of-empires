@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit/';
 
 const unitsSlice = createSlice({
@@ -15,6 +14,7 @@ const unitsSlice = createSlice({
       state.units = action.payload;
       state.isLoading = false;
     },
+
   },
 });
 

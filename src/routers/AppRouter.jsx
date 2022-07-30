@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import Home from '../pages/home/Home';
 import UnitDetail from '../pages/unitDetail/UnitDetail';
 import Unit from '../pages/unit/Unit';
+import NotFound from '../pages/notFound/NotFound';
 
 function AppRouter() {
   return (
@@ -12,7 +13,8 @@ function AppRouter() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/units" element={<Unit />} />
-        <Route path="/unit-detail" element={<UnitDetail />} />
+        <Route path="/unit-detail/:id" element={<UnitDetail />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
