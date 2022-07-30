@@ -4,7 +4,7 @@ import { getUnitsSuccess } from './unitSlicer';
 
 function* workGetUnitsFetch() {
   /* eslint implicit-arrow-linebreak: ["error", "beside"] */
-  const units = yield call(() => fetch('http://localhost:3000/db/age-of-empires-units.json'));
+  const units = yield call(() => fetch('https://age-of-empires-3326.netlify.app/db/age-of-empires-units.json'));
   const formattedUnits = yield units.json();
   yield put(getUnitsSuccess(formattedUnits));
 }
