@@ -14,3 +14,14 @@ function* unitSaga() {
 }
 
 export default unitSaga;
+
+//   const getData = () => {
+//     fetch('http://localhost:3000/db/age-of-empires-units.json')
+//       .then((response) => {
+//         console.log(response);
+//         return response.json();
+//       })
+//       .then((myJson) => {
+//         console.log(myJson.units);
+//       });
+//   };

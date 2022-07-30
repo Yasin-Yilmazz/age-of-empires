@@ -144,7 +144,6 @@ function Unit() {
               className="mx-1"
             />
             Gold
-            {' '}
             <input
               type="range"
               disabled={!isGoldActive}
@@ -165,7 +164,6 @@ function Unit() {
               className="mx-1"
             />
             Food
-            {' '}
             <input
               type="range"
               disabled={!isFoodActive}
@@ -204,9 +202,7 @@ function Unit() {
                 <td>{unit.age}</td>
                 <td>
                   {unit.cost?.Wood && `Wood: ${unit.cost?.Wood} `}
-                  {' '}
                   {unit.cost?.Gold && `Gold: ${unit.cost?.Gold} `}
-                  {' '}
                   {unit.cost?.Food && `Food: ${unit.cost?.Food} `}
                 </td>
                 <td className="text-center">
@@ -218,7 +214,6 @@ function Unit() {
                   >
                     Unit Detail
                   </button>
-                  {' '}
                 </td>
               </tr>
             ))}
